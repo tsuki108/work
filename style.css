@@ -1,0 +1,136 @@
+*{
+/*   border: solid 1px black; */
+  padding:0px;
+  margin:0px;
+font-family: 'Kiwi Maru', serif;
+}
+.container{
+  padding-top: 60px;
+}
+section{
+  padding-top:100px;
+}
+.ncyu{
+  padding-top:73px;
+}
+.move{
+  padding-top:10px;
+  display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 10vh;
+}
+.move-1{
+  position: relative;
+    width: 100%;
+    height: 25%;
+    margin: 0px;
+    overflow: hidden;
+}
+.card-img-top{
+  transition: transform 1s ease;
+  width: 100%;
+  height: 100%;
+}
+.move-1:hover .card-img-top, .move-1:focus .card-img-top {
+    transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+}
+section#s1{
+  background-color:#86A697;
+}
+section#s2{
+  background-color:#91AD70;
+}
+section#s3{
+  background-color:#FAD689;
+  padding-bottom:50px;
+}
+section#s4{
+  background-color:#7D6C46;
+  padding-bottom:100px;
+}
+.icon{
+  position:relative;
+  width:60%;
+  height:90%;
+  background:#D7C4BB;
+  left:50%;
+  top:50%;
+  border-radius: 5%;
+  box-shadow: 4px 6px 7px rgba(0,0,0,.3);
+  transform:translate(-50%,-50%);
+}
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #535953;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #A8D8B9;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+p{
+text-indent:15px;
+text-align:left;
+line-height:30px;
+  }
+span{
+  font-size:  25px;
+  line-height:40px;
+}
+.a{
+  font-size:  20px;
+}
+.box{
+  position: relative;
+  height:25px;
+  width:25px;
+  top: 10px;
+  left: 100px;
+  animation-name: boxmove;
+  animation-duration:5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes boxmove{
+  0%{
+    left:100px;
+    background-color: #a62970;
+  }    
+    25%{
+    background-color: #fc613a;
+    }
+  50%{
+     background-color: #fcb83a;
+     transform: rotate(-350deg);
+  }
+   100%{
+    left:300px;
+    background-color: #a9fcb8;
+  }
+}
